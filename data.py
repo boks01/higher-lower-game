@@ -228,7 +228,7 @@ data = [
         'country': 'United States'
     },
     {
-        'name': 'UEFA\nChampions League',
+        'name': 'UEFA Champions\nLeague',
         'follower_count': 58,
         'description': 'Club football competition',
         'country': 'Europe'
