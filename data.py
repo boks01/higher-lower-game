@@ -6,43 +6,43 @@ data = [
         'country': 'United States'
     },
     {
-        'name': 'Cristiano Ronaldo',
+        'name': 'Cristiano\nRonaldo',
         'follower_count': 215,
         'description': 'Footballer',
         'country': 'Portugal'
     },
     {
-        'name': 'Ariana Grande',
+        'name': 'Ariana\nGrande',
         'follower_count': 183,
         'description': 'Musician and actress',
         'country': 'United States'
     },
     {
-        'name': 'Dwayne Johnson',
+        'name': 'Dwayne\nJohnson',
         'follower_count': 181,
         'description': 'Actor and professional wrestler',
         'country': 'United States'
     },
     {
-        'name': 'Selena Gomez',
+        'name': 'Selena\nGomez',
         'follower_count': 174,
         'description': 'Musician and actress',
         'country': 'United States'
     },
     {
-        'name': 'Kylie Jenner',
+        'name': 'Kylie\nJenner',
         'follower_count': 172,
         'description': 'Reality TV personality and businesswoman and Self-Made Billionaire',
         'country': 'United States'
     },
     {
-        'name': 'Kim Kardashian',
+        'name': 'Kim\nKardashian',
         'follower_count': 167,
         'description': 'Reality TV personality and businesswoman',
         'country': 'United States'
     },
     {
-        'name': 'Lionel Messi',
+        'name': 'Lionel\nMessi',
         'follower_count': 149,
         'description': 'Footballer',
         'country': 'Argentina'
@@ -60,37 +60,37 @@ data = [
         'country': 'Brasil'
     },
     {
-        'name': 'National Geographic',
+        'name': 'National\nGeographic',
         'follower_count': 135,
         'description': 'Magazine',
         'country': 'United States'
     },
     {
-        'name': 'Justin Bieber',
+        'name': 'Justin\nBieber',
         'follower_count': 133,
         'description': 'Musician',
         'country': 'Canada'
     },
     {
-        'name': 'Taylor Swift',
+        'name': 'Taylor\nSwift',
         'follower_count': 131,
         'description': 'Musician',
         'country': 'United States'
     },
     {
-        'name': 'Kendall Jenner',
+        'name': 'Kendall\nJenner',
         'follower_count': 127,
         'description': 'Reality TV personality and Model',
         'country': 'United States'
     },
     {
-        'name': 'Jennifer Lopez',
+        'name': 'Jennifer\nLopez',
         'follower_count': 119,
         'description': 'Musician and actress',
         'country': 'United States'
     },
     {
-        'name': 'Nicki Minaj',
+        'name': 'Nicki\nMinaj',
         'follower_count': 113,
         'description': 'Musician',
         'country': 'Trinidad and Tobago'
@@ -102,49 +102,49 @@ data = [
         'country': 'United States'
     },
     {
-        'name': 'Khloé Kardashian',
+        'name': 'Khloé\nKardashian',
         'follower_count': 108,
         'description': 'Reality TV personality and businesswoman',
         'country': 'United States'
     },
     {
-        'name': 'Miley Cyrus',
+        'name': 'Miley\nCyrus',
         'follower_count': 107,
         'description': 'Musician and actress',
         'country': 'United States'
     },
     {
-        'name': 'Katy Perry',
+        'name': 'Katy\nPerry',
         'follower_count': 94,
         'description': 'Musician',
         'country': 'United States'
     },
     {
-        'name': 'Kourtney Kardashian',
+        'name': 'Kourtney\nKardashian',
         'follower_count': 90,
         'description': 'Reality TV personality',
         'country': 'United States'
     },
     {
-        'name': 'Kevin Hart',
+        'name': 'Kevin\nHart',
         'follower_count': 89,
         'description': 'Comedian and actor',
         'country': 'United States'
     },
     {
-        'name': 'Ellen DeGeneres',
+        'name': 'Ellen\nDeGeneres',
         'follower_count': 87,
         'description': 'Comedian',
         'country': 'United States'
     },
     {
-        'name': 'Real Madrid CF',
+        'name': 'Real\nMadrid CF',
         'follower_count': 86,
         'description': 'Football club',
         'country': 'Spain'
     },
     {
-        'name': 'FC Barcelona',
+        'name': 'FC\nBarcelona',
         'follower_count': 85,
         'description': 'Football club',
         'country': 'Spain'
@@ -156,13 +156,13 @@ data = [
         'country': 'Barbados'
     },
     {
-        'name': 'Demi Lovato',
+        'name': 'Demi\nLovato',
         'follower_count': 80,
         'description': 'Musician and actress',
         'country': 'United States'
     },
     {
-        'name': "Victoria's Secret",
+        'name': "Victoria's\nSecret",
         'follower_count': 69,
         'description': 'Lingerie brand',
         'country': 'United States'
@@ -186,19 +186,19 @@ data = [
         'country': 'Canada'
     },
     {
-        'name': 'Chris Brown',
+        'name': 'Chris\nBrown',
         'follower_count': 64,
         'description': 'Musician',
         'country': 'United States'
     },
     {
-        'name': 'LeBron James',
+        'name': 'LeBron\nJames',
         'follower_count': 63,
         'description': 'Basketball player',
         'country': 'United States'
     },
     {
-        'name': 'Vin Diesel',
+        'name': 'Vin\nDiesel',
         'follower_count': 62,
         'description': 'Actor',
         'country': 'United States'
@@ -210,25 +210,25 @@ data = [
         'country': 'United States'
     },
     {
-        'name': 'David Beckham',
+        'name': 'David\nBeckham',
         'follower_count': 82,
         'description': 'Footballer',
         'country': 'United Kingdom'
     },
     {
-        'name': 'Billie Eilish',
+        'name': 'Billie\nEilish',
         'follower_count': 61,
         'description': 'Musician',
         'country': 'United States'
     },
     {
-        'name': 'Justin Timberlake',
+        'name': 'Justin\nTimberlake',
         'follower_count': 59,
         'description': 'Musician and actor',
         'country': 'United States'
     },
     {
-        'name': 'UEFA Champions League',
+        'name': 'UEFA\nChampions League',
         'follower_count': 58,
         'description': 'Club football competition',
         'country': 'Europe'
@@ -240,31 +240,31 @@ data = [
         'country': 'United States'
     },
     {
-        'name': 'Emma Watson',
+        'name': 'Emma\nWatson',
         'follower_count': 56,
         'description': 'Actress',
         'country': 'United Kingdom'
     },
     {
-        'name': 'Shawn Mendes',
+        'name': 'Shawn\nMendes',
         'follower_count': 57,
         'description': 'Musician',
         'country': 'Canada'
     },
     {
-        'name': 'Virat Kohli',
+        'name': 'Virat\nKohli',
         'follower_count': 55,
         'description': 'Cricketer',
         'country': 'India'
     },
     {
-        'name': 'Gigi Hadid',
+        'name': 'Gigi\nHadid',
         'follower_count': 54,
         'description': 'Model',
         'country': 'United States'
     },
     {
-        'name': 'Priyanka Chopra Jonas',
+        'name': 'Priyanka\nChopra Jonas',
         'follower_count': 53,
         'description': 'Actress and musician',
         'country': 'India'
@@ -288,7 +288,7 @@ data = [
         'country': 'Colombia'
     },
     {
-        'name': 'Camila Cabello',
+        'name': 'Camila\nCabello',
         'follower_count': 49,
         'description': 'Musician',
         'country': 'Cuba'

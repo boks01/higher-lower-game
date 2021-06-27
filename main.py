@@ -2,16 +2,24 @@ from tkinter import *
 import random
 from data import data
 
-BG = "#F0D9E7"
+BG = "#B1DDC6"
 FONT_COLOR1 = "#A239EA"
 FONT_COLOR2 = "#5C33F6"
 FONT_COLOR3 = "#FF94CC"
 SCORE = 0
 name1 = ""
 name2 = ""
+folower_count1 = ""
+folower_count2  = ""
 #===================function=================
+def compare():
+    global folower_count1, folower_count2
+    first_compare.config(text=f"{folower_count1}M")
+    second_compare.config(text=f"{folower_count2}M")
 def random_compare():
-    global name1,name2
+    global name1, name2, folower_count1, folower_count2 
+    first_compare.config(text=name1)
+    second_compare.config(text=name2)
     compare1 = random.choice(data)
     compare2 = random.choice(data)
     name1 = f"{compare1['name']}" 
@@ -28,7 +36,7 @@ window.config(padx=100, pady=80, bg=BG)
 # ========== all text ==============
 A = Label(text="A", font=("ariel", 25, "italic"), bg=BG)
 A.grid(row=0, column=0)
-first_compare = Button(text="First\nCompare", font=("ariel", 35, "bold"), bg=BG)
+first_compare = D=Label(text="First\nCompare", font=("ariel", 35, "bold"), bg=BG)
 first_compare.grid(row=1, column=0)
 
 score = Label(text=SCORE, font=("ariel", 35, "bold"), bg=BG)
@@ -40,12 +48,22 @@ vs.config(padx=40, pady=40)
 
 B = Label(text="B", font=("ariel", 25, "italic"), bg=BG)
 B.grid(row=0, column=2)
-second_compare = Button(text="Second\nCompare", font=("ariel", 35, "bold"), bg=BG, command=compare)
+second_compare = Label(text="Second\nCompare", font=("ariel", 35, "bold"), bg=BG)
 second_compare.grid(row=1, column=2)
 
-asking = Label(text="Who's\nmore famous?", font=("ariel", 35, "italic"), bg=BG, command=compare)
+asking = Label(text="Is A more\nfamous than B?", font=("ariel", 35, "italic"), bg=BG)
 asking.grid(row=2, column=1)
-# asking.config(pady=40)
 
+# asking.config(pady=40)
+#============== images =================
+yes = PhotoImage(file="images/right.png")
+yes_button = Button(image=yes)
+yes_button.grid(row=3, column=2)
+yes_button.config(highlightthickness=0)
+
+no = PhotoImage(file="images/wrong.png")
+no_button = Button(image=no)
+no_button.grid(row=3, column=0)
+no_button.config(highlightthickness=0)
 random_compare()
 window.mainloop()
