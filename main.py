@@ -12,9 +12,11 @@ name2 = "name"
 follower_count1 = "Follower"
 follower_count2 = "Follower"
 score = 0
+with open("data.txt", "r") as file:
+    Hscore = file.read()
 # ===================function=================
 def no_compare():
-    global follower_count1, follower_count2, score
+    global follower_count1, follower_count2, score, Hscore
     canvas.itemconfig(first_compare, text=f"{follower_count1}M")
     canvas.itemconfig(second_compare, text=f"{follower_count2}M")
     if follower_count1 < follower_count2:
@@ -24,12 +26,20 @@ def no_compare():
         window.after(2000, func=random_compare)
     else:
         canvas.itemconfig(asking, text="Incorrect answer you lose")
-        score = 0
-        canvas.itemconfig(highscore, text=score)
-        window.after(2000, func=random_compare)
+        if int(score) > int(Hscore):
+            with open("data.txt", "w") as file:
+                file.write(str(score))
+                highest_Score = score
+        yes_or_no = messagebox.askyesno(title="quit or rerty", message=f"wow your score is {score}\n your highest score are {highest_Score}\nwanna retry?, no its quit.")
+        if yes_or_no:
+            score = 0
+            canvas.itemconfig(highscore, text=score)
+            window.after(2000, func=random_compare)
+        else:
+            window.destroy()
 
 def yes_compare():
-    global follower_count1, follower_count2, score
+    global follower_count1, follower_count2, score, Hscore
     canvas.itemconfig(first_compare, text=f"{follower_count1}M")
     canvas.itemconfig(second_compare, text=f"{follower_count2}M")
     if follower_count1 > follower_count2 or follower_count1 == follower_count2:
@@ -39,8 +49,16 @@ def yes_compare():
         window.after(2000, func=random_compare)
     else:
         canvas.itemconfig(asking, text="Incorrect answer you lose")
-        score = 0
-        window.after(2000, func=random_compare)
+        if int(score) > int(Hscore):
+            with open("data.txt", "w") as file:
+                file.write(str(score))
+        yes_or_no = messagebox.askyesno(title="quit or rerty", message=f"wow your score is {score}\nwanna retry?, no its quit.")
+        if yes_or_no:
+            score = 0
+            canvas.itemconfig(highscore, text=score)
+            window.after(2000, func=random_compare)
+        else:
+            window.destroy()
         
 
 def random_compare():
