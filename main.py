@@ -27,14 +27,14 @@ def no_compare():
     else:
         canvas.itemconfig(asking, text="Incorrect answer you lose")
         if int(score) > int(Hscore):
+            Hscore = score
             with open("data.txt", "w") as file:
                 file.write(str(score))
-                highest_Score = score
-        yes_or_no = messagebox.askyesno(title="quit or rerty", message=f"wow your score is {score}\n your highest score are {highest_Score}\nwanna retry?, no its quit.")
+        yes_or_no = messagebox.askyesno(title="quit or rerty", message=f"wow your score is {score}\n your highest score are {Hscore}\nwanna retry?, no its quit.")
         if yes_or_no:
             score = 0
             canvas.itemconfig(highscore, text=score)
-            window.after(2000, func=random_compare)
+            window.after(1000, func=random_compare)
         else:
             window.destroy()
 
@@ -51,12 +51,13 @@ def yes_compare():
         canvas.itemconfig(asking, text="Incorrect answer you lose")
         if int(score) > int(Hscore):
             with open("data.txt", "w") as file:
+                Hscore = score
                 file.write(str(score))
-        yes_or_no = messagebox.askyesno(title="quit or rerty", message=f"wow your score is {score}\nwanna retry?, no its quit.")
+        yes_or_no = messagebox.askyesno(title="quit or rerty", message=f"wow your score is {score}\n your highest score are {Hscore}\nwanna retry?, no its quit.")
         if yes_or_no:
             score = 0
             canvas.itemconfig(highscore, text=score)
-            window.after(2000, func=random_compare)
+            window.after(1000, func=random_compare)
         else:
             window.destroy()
         
